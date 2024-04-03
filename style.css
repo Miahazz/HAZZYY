@@ -526,22 +526,49 @@ left: 0;
   .btn--nobg:hover{
     color: var(--clr-primary);   
   }
-  
-/* LATEST STYLE */
+
+  /* ABOUT PAGE BANNER MOBILE */
+@media screen and(max-width: 520px) {
+  .aboutSection_left{
+    display: none;
+  }
+  .aboutBanner_right h1{
+font-size: 4rem;
+  }
+.aboutBanner_right ul li a{
+  font-size: 1.5rem;
+}
+.aboutBanner_left small{
+  margin-left: 2rem;
+}
+.aboutSection_left small::before{
+  display: inline-block;
+  position: relative;
+  content: " ";
+  background-color: var(--clr-dark);
+  width: 35rem;
+  height:.2rem;
+  bottom: .5rem;
+  right: 3rem;
+  left: 0; 
+}
+  }
+
+/* LATEST STYLE  */
 .latestStyle{
    padding: 3rem 0;
 }
 .latestStyle_wrapper{
   display: grid;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 3rem;
+  gap: 2rem;
 }
 .latestStyle_h2{
   color: var(--clr-primary); 
   font-size: 1.5rem;
   font-weight: 700; 
 }
-.catalogSection_h2::after{
+.latestStyle_h2::after{
   display: inline-block;
   position: relative;
   content: " ";
@@ -551,18 +578,18 @@ left: 0;
   bottom: 1rem;
   right: 1rem;
   } 
-  .catalogSection_card{
+  .latestStyle_card{
     background-color: var(--clr-semilight);
     max-width: 40rem;
     margin-top: 4rem;
   }
-  .catalogSection_card_img{
+  .latestStyle_card_img{
     width: 30rem;
   }
-  .catalogSection_card--content{
+  .latestStyle_card--content{
     padding: 1rem;
   }
-  .catalogSection_card--content h3{
+  .latestStyle_card--content h3{
     color: var(--clr-secondary);
     font-size: 2.5rem;
     font-weight: 700;
@@ -584,7 +611,52 @@ left: 0;
     color: var(--clr-dark);
   }
   .btn--nobg:hover{
-    color: var(--clr-primary); 
+    color: var(--clr-primary);
+
+     /*LATEST STYLE MOBILE  */
+     .latestStyle_wrapper{
+      grid-template-columns: 1fr;
+     }
+  }
+  /* CATALOG PAGE BANNER */
+.catalogBanner_bg{
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(./img/catalog-banner.png);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* to center the text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.catalogBanner h1{
+  font-size: 7rem;
+  font-weight: 700;
+  color: var(--clr-primary);
+}
+  .catalogBanner p{
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+  /* PACKAGE THEME */
+  .packageTheme_bg{
+   color: var(--clr-dark);
+   font-size: 2rem;
+   font-weight: 600;
+   margin-bottom: 1rem;
+
+   .packageTheme_h2{
+    
+   }
+   .btn--nobg{
+    color: var(--clr-primary);
+   }
+
   }
 
 /* REPEATABLE */
