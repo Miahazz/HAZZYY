@@ -568,33 +568,31 @@ font-size: 4rem;
   font-size: 1.5rem;
   font-weight: 700; 
 }
-.latestStyle_h2::after{
-  display: inline-block;
-  position: relative;
-  content: " ";
-  background-color: var(--clr-dark);
-  height: .2rem;
-  width: 120rem;
-  bottom: 1rem;
-  right: 1rem;
-  } 
-  .latestStyle_card{
-    background-color: var(--clr-semilight);
-    max-width: 40rem;
-    margin-top: 4rem;
-  }
-  .latestStyle_card_img{
-    width: 30rem;
-  }
-  .latestStyle_card--content{
-    padding: 1rem;
-  }
-  .latestStyle_card--content h3{
-    color: var(--clr-secondary);
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-  }
+.latestStyle h1{
+  color: var(--clr-primary);
+  font-weight: 700;
+  font-size: 5rem;
+}
+.latestStyle_card{
+  border-color: var(--clr-light);
+  max-width: 40rem;
+  margin-top: 4rem;
+}
+.latestStyle_card img{
+  width: 40rem;
+}
+.latestStyle_card--content{
+padding: 1rem;
+}
+.latestStyle_card--content h3{
+  color: var(--clr-secondary);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.latestStyle_card--content p{
+  margin-bottom: 1rem;
+}
   .btn--nobg{
     color:var(--clr-dark);
   }
@@ -643,21 +641,197 @@ font-size: 4rem;
     font-size: 3rem;
     line-height: 2.5rem;
   }
-  /* PACKAGE THEME */
-  .packageTheme_bg{
-   color: var(--clr-dark);
-   font-size: 2rem;
-   font-weight: 600;
-   margin-bottom: 1rem;
 
-   .packageTheme_h2{
-    
-   }
-   .btn--nobg{
-    color: var(--clr-primary);
-   }
+  /* DESIGN PACKAGE BANNER */
+.designPackage{
+  padding: 3rem 0;
+}
+.designPackage_wrapper{
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  gap: 2rem
+  max-width 40rem;
+}
+.designPackage h2{
+  color: var(--clr-primary);
+  font-size: 2rem;
+  font-weight: 700;
+}
 
+.designPackage_h2::after{
+  display: inline-block;
+  position: relative;
+  content: " ";
+  background-color: var(--clr-dark);
+  height: .2rem;
+  width: 500rem;
+  bottom: 1rem;
+  right: 1rem;
+  } 
+  .designPackage_card{
+    background-color: var(--clr-semilight);
+    margin-top: 4rem;
   }
+  .designPackage_card_img{
+    width: 30rem;
+  }
+  .designPackage_card--content{
+    padding: 1rem;
+  }
+  .designPackage_card--content h3{
+    color: var(--clr-secondary);
+    font-size: 2.5rem;
+    font-weight: 400rem;
+    margin-bottom: 500rem;
+  }
+  .btn--nobg{
+    color:var(--clr-dark);
+  }
+  .btn--nobg{
+    color: var(--clr-dark);
+  }
+  .btn--nobg:hover{
+    color: var(--clr-primary);   
+  }
+   /* CATALOG BANNER */
+.catalogBanner_bg{
+  height: 50vh;
+  background-size:50;
+  background-color: var(--clr-light);
+  /* to make the text in the right side */
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  text-align: right;
+  .homeBanner_left ul li:last-child::before{
+    display: inline-block;
+    position: relative;
+    content: " ";
+    background-color: var(--clr-primary);
+    width: 20rem;
+    height: .2rem;
+    bottom: 1rem;
+    right: 1rem;
+    }
+    .homeBanner_left p{
+    margin-bottom: 5rem;
+    }
+    .homeBanner_right{
+        display: flex;
+        gap: 2rem;
+    }
+    .homeBanner_right img:last-child{
+        position: relative;
+        top: 4rem;
+    }
+}
+/* PACKAGE DESIGN BANNER */
+.designPackage{
+  color: var(--clr-primary);
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 3rem
+}
+.designPackage_theme{
+padding: 5rem;
+display: flex;
+gap: .5rem;
+
+.designPackage_left{
+  width: 500rem;
+  margin-left: 25rem;
+}
+}
+.designPackage_wrapper h2{
+  font-size: 6rem;
+  font-weight: 700rem;
+  text-align: center;
+  color:var(--clr-primary);
+}
+.designPackage_right h2{
+  color: var(--clr-primary);
+  display: flex;
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+  margin-left: 2rem;
+  height: -20px;
+}
+.designPackage_right p{
+  font-size: 1rem;
+  line-height: 2.5rem;
+  margin-left: 2rem;
+}
+.designPackage p{
+  color:var(--clr-dark);
+  font-size: 2rem;
+  display: flex;
+}
+  /* RETRO THEME */
+.retro_theme {
+  background-color: var(--clr-semilight);
+  padding: 5rem;
+  display: flex;
+  gap:.100rem;
+  flex-direction: row-reverse;
+}
+.retro_left {
+  width: 500rem;
+  margin-left: 25.5rem;
+  display: flex;
+}
+.retro_right h2{
+  color: var(--clr-primary);
+  font-size: 6rem;
+  font-weight: 700;
+  margin-left: 25rem;
+  height:  -20px;
+}
+.retro_right p{
+  font-size: 2rem;
+  text-align: justify;
+  margin-left: 25.5rem;
+}
+/* SHABBY THEME */
+.shabby h2{
+  color: var(--clr-primary);
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 3rem;
+}
+.shabby_theme {
+  padding: 5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.shabby_left {
+  width: 500rem;
+  margin-left: 25rem;
+}
+.shabby_right h2 {
+  color:var(--clr-primary);
+  display: flex;
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+  margin-left: 6rem;
+  height: -2px;
+}
+.shabby_right p {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-left: 1.5rem;
+}
+/* CONTACT PAGE BANNER */
+.contactpage{
+  color: var(--clr-primary);
+  padding: 5rem;
+  display: flex;
+  gap: 50rem;
+  flex-direction: column;
+}
 
 /* REPEATABLE */
 .footer{
