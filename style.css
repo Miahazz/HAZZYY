@@ -703,6 +703,7 @@ padding: 1rem;
   flex-direction: column;
   justify-content: right;
   text-align: right;
+}
   .homeBanner_left ul li:last-child::before{
     display: inline-block;
     position: relative;
@@ -724,7 +725,7 @@ padding: 1rem;
         position: relative;
         top: 4rem;
     }
-}
+
 /* PACKAGE DESIGN BANNER */
 .designPackage{
   color: var(--clr-primary);
@@ -737,11 +738,10 @@ padding: 1rem;
 padding: 5rem;
 display: flex;
 gap: .5rem;
-
+}
 .designPackage_left{
   width: 500rem;
   margin-left: 25rem;
-}
 }
 .designPackage_wrapper h2{
   font-size: 6rem;
@@ -793,6 +793,11 @@ gap: .5rem;
   text-align: justify;
   margin-left: 25.5rem;
 }
+.retro_right ul{
+  text-decoration: none;
+  list-style: none;
+  gap:20px;
+}
 /* SHABBY THEME */
 .shabby h2{
   color: var(--clr-primary);
@@ -826,13 +831,161 @@ gap: .5rem;
 }
 /* CONTACT PAGE BANNER */
 .contactpage{
+ padding: 50rem 0;
+}
+.contact h2{
+  font-size: 30rem;
+  margin-bottom: 40rem;
+}
+.contact_wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:30rem;
+}
+.contact_form input,
+.contact_form textarea{
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  border-bottom: 1rem solid gray;
+  padding: 10rem 16rem;
+}
+.contact_form button{
+  width: 100%;
+  padding: 10rem 16rem;
+  background: #0000;
+  color:#fff;
+  margin-top: 10rem;
+  border: none;
+  border-radius: 20rem; 
+}
+.contact_info{
+  background: #0000;
+  color: #fff;
+  padding: 40rem;
+}
+.contact_info ul{
   color: var(--clr-primary);
-  padding: 5rem;
+}
+.contact_info ul li a{
+  margin-bottom: 20rem;
   display: flex;
-  gap: 50rem;
-  flex-direction: column;
+  align-items: center;
+}
+.contact_info ul li i{
+  font-size: 40rem;
 }
 
+/* CATAlOG MAIN */
+.catalog {
+padding: 50rem 0;
+}
+.catalog h2 {
+  margin-bottom: 20rem;
+  text-align: center;
+}
+
+.catalog_wrapper{
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  grid-gap:20rem;
+}
+
+.catalog_cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50rem;
+}
+.catalog_cards .card{
+padding: 20rem;
+background: #2b2b2b;
+}
+
+.catalog_cards .card h4 {
+  text-align: center;
+  margin-bottom: 30rem;
+  font-size: 20rem;
+  color:#1b8b83;
+}
+@media(max-width: 460px){
+  .UpdateSection .wrapper{
+    flex-direction: column-reverse;
+    padding: 0 15rem;
+  }
+}
+.updateSection{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20rem 0;
+}
+
+.updateSection .wrapper:nth-child(2){
+  flex-direction: row-reverse;
+  background:gray;
+  position: relative;
+}
+.updateSection .wrapper:nth-child::before{
+content: " ";
+position: absolute;
+top: 0;
+width: 800rem;
+height: 100%;
+background: #2b2b2b;
+right: 100%;
+}
+.updateSection .wrapper:nth-child(2)::after{
+width: 800rem;
+display: flex;
+gap: 20rem;
+}
+.updateSection_content h3{
+  text-align: center;
+  margin-bottom: 20rem;
+  font-size: 30rem;
+}
+
+/* Updates */
+.aboutUpdates{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.aboutUpdates_h2{
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.3;
+}
+.aboutUpdates_container{
+  max-width: 1.2rem;
+  width: 100%;
+  padding: 0 12rem;
+  margin: auto;
+}
+/* UPDATES SECTION */
+.updateSection{
+  padding: 50rem;
+}
+.updateSection h2{
+  margin-bottom: 20rem;
+  text-align: center;
+  color:#1b8b83;
+}
+.updateSection_wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20rem;
+}
+.updateSection_wrapper ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.updateSection_wrapper img{
+  width:100%;
+  margin-bottom: 10rem;
+}
 /* REPEATABLE */
 .footer{
   background-color: var(--clr-dark);
